@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div ng-app="ParrotApp">
+    <h1>What are the related words for Park?</h1>
+    <div ng-controller="wordController">
+        <ul>
+            <li ng-repeat="word in words">
+                {{word.name}} -- {{word.description}}
+            </li>
+        </ul>
+    </div>
+</div>
